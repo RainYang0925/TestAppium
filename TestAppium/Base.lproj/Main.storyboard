@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestAppium" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-bO-ngE" userLabel="TextField1">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="TextField1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Dt-ay-6o1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jX0-ul-iON" userLabel="TextField2">
+                                <rect key="frame" x="16" y="66" width="568" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="TextField2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yhp-iT-CxR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyz-d8-hfS" userLabel="SubmitButton">
+                                <rect key="frame" x="16" y="104" width="49" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="SubmitButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o9y-Gb-M5n"/>
+                                    <constraint firstAttribute="width" constant="49" id="rIH-dS-S5Y"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D64-Vz-jy1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51d-SM-Gwb" userLabel="ClearButton">
+                                <rect key="frame" x="547" y="104" width="37" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="ClearButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="at5-bt-RHX"/>
+                                    <constraint firstAttribute="width" constant="37" id="ejg-qe-Yah"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOe-gf-dVH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eKv-bO-ngE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7V9-fH-jDb"/>
+                            <constraint firstItem="eKv-bO-ngE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DUA-cU-eXg"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="top" secondItem="jX0-ul-iON" secondAttribute="bottom" constant="8" id="I6y-2F-n2e"/>
+                            <constraint firstItem="eyz-d8-hfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KA6-1y-zyP"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="leading" secondItem="eyz-d8-hfS" secondAttribute="trailing" constant="8" id="KK0-ik-a24"/>
+                            <constraint firstItem="eyz-d8-hfS" firstAttribute="top" secondItem="jX0-ul-iON" secondAttribute="bottom" constant="8" id="Mew-mV-ka6"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="top" secondItem="jX0-ul-iON" secondAttribute="bottom" constant="8" id="Rgv-Eh-UYg"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="top" secondItem="jX0-ul-iON" secondAttribute="bottom" constant="8" id="Yza-ks-Fk0"/>
+                            <constraint firstItem="jX0-ul-iON" firstAttribute="top" secondItem="eKv-bO-ngE" secondAttribute="bottom" constant="8" id="cyE-xt-f53"/>
+                            <constraint firstItem="jX0-ul-iON" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="e3t-SL-uGM"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="leading" secondItem="eyz-d8-hfS" secondAttribute="trailing" constant="8" id="eaW-Jo-hhI"/>
+                            <constraint firstItem="jX0-ul-iON" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hhL-1Q-lzT"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jt6-J6-phB"/>
+                            <constraint firstItem="51d-SM-Gwb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="odt-a3-cd8"/>
+                            <constraint firstItem="eKv-bO-ngE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pDh-y8-bPR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="51d-SM-Gwb" secondAttribute="bottom" constant="466" id="sWy-23-ocz"/>
+                            <constraint firstItem="eyz-d8-hfS" firstAttribute="top" secondItem="jX0-ul-iON" secondAttribute="bottom" constant="8" id="ylb-vh-Bps"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mew-mV-ka6"/>
+                                <exclude reference="KK0-ik-a24"/>
+                                <exclude reference="Rgv-Eh-UYg"/>
+                                <exclude reference="Yza-ks-Fk0"/>
+                                <exclude reference="eaW-Jo-hhI"/>
+                                <exclude reference="odt-a3-cd8"/>
+                                <exclude reference="sWy-23-ocz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="eKv-bO-ngE" id="Qi6-wG-A2W"/>
+                        <outlet property="textField2" destination="jX0-ul-iON" id="BMl-h9-c2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
